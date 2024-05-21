@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="openModal()">Open Modal</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Do you want to save changes?</p>
+        <button class="modal-button" onclick="saveChanges()">
+          Save Changes
+        </button>
+        <button class="modal-button" onclick="cancel()">Cancel</button>
+      </div>
+    </div>
+  </body>
+  <script src="Modal.js"></script>
+</html>
